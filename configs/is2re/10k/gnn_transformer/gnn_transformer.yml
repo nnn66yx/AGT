@@ -1,0 +1,36 @@
+includes:
+- configs/is2re/10k/base.yml
+
+model:
+  name: gnn-transformer
+  gnn_type: gcn
+  gnn_virtual_node: false
+  graph_pooling: cls
+  transformer_norm_input: true
+  gnn_num_layer: 5
+  gnn_emb_dim: 300
+  node_encoder,
+  edge_encoder_cls,
+  JK=gnn_JK,
+  drop_ratio=gnn_dropout,
+  residual=gnn_residual,
+  gnn_type=gnn_type,
+
+# *** Important note ***
+#   The total number of gpus used for this run was 1.
+#   If the global batch size (num_gpus * batch_size) is modified
+#   the lr_milestones and warmup_steps need to be adjusted accordingly.
+
+optim:
+  batch_size: 2
+  eval_batch_size: 2
+  num_workers: 0
+  lr_initial: 0.0001
+  lr_gamma: 0.1
+  lr_milestones: # steps at which lr_initial <- lr_initial * lr_gamma
+    - 20000
+    - 40000
+    - 60000
+  warmup_steps: 10000
+  warmup_factor: 0.2
+  max_epochs: 100

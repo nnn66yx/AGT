@@ -4,17 +4,17 @@
 
 ## Installation
 
-See [installation instructions](https://github.com/Open-Catalyst-Project/ocp/blob/main/INSTALL.md).
+See [installation instructions](https://github.com/nnn66yx/AGT/INSTALL.md).
 
 ## Download data
 
-Dataset download links and instructions are in [DATASET.md](https://github.com/Open-Catalyst-Project/ocp/blob/main/DATASET.md).
+Dataset download links and instructions are in [DATASET.md](https://github.com/nnn66yx/AGT/DATASET.md).
 
 ## Train and evaluate models
 
 A detailed description of how to train and evaluate models, run ML-based
 relaxations, and generate EvalAI submission files can be found in
-[TRAIN.md](https://github.com/Open-Catalyst-Project/ocp/blob/main/TRAIN.md).
+[TRAIN.md](https://github.com/nnn66yx/AGT/TRAIN.md).
 
 ```
 python main.py --mode train --config-yml configs/IS2RE/10k/agt/agt.yml
@@ -27,4 +27,4 @@ We provide several pretrained model weights for download
 
 ## Acknowledgement ##
 
-Our implementation is based on [PyTorch](https://pytorch.org/), [PyG](https://pytorch-geometric.readthedocs.io/en/latest/index.html),  [ocp](https://github.com/Open-Catalyst-Project/ocp)https://github.com/torchmd/torchmd-net).
+Our implementation is based on [PyTorch](https://pytorch.org/), [PyG](https://pytorch-geometric.readthedocs.io/en/latest/index.html),  [ocp](https://github.com/Open-Catalyst-Project/ocp)).
